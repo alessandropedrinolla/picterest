@@ -1,0 +1,30 @@
+block variables
+doctype html
+html(lan='en')
+  head
+    link(rel='stylesheet', href='/style.css')
+    script(src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js')
+  body
+    header
+      div Picterest
+      nav
+      if username          
+        div Welcome #{username}
+        div Add new pic
+          form(id='new-pic-form' action='\savepic' method='POST')
+            input(type='txt' placeholder='description' name='description' required)
+            input(type='txt' placeholder='link' name='link' required)
+            button(type='submit') Save
+        div
+          a(href='/logout') Logout
+      else
+        form(id='login-form' action='\login' method='POST')
+          input(type='txt' placeholder='username' name='username' required)
+          input(type='password' placeholder='password' name='password' required)
+          button(type='submit') Login
+        div
+          a(href='/auth/github') Login with github
+        div
+          a(href='/register') Register
+    block content
+    script(src='client.js')

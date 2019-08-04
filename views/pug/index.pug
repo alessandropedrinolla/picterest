@@ -1,0 +1,22 @@
+extends layout.pug
+block variables
+  username = #{username}
+block content
+  main(class='grid')
+    <!--div(class='card grid-item')
+      img(src='https://image.shutterstock.com/image-photo/sunset-silhouettes-playing-altinho-futebol-600w-189406904.jpg')
+      <div>Playin at the beach</div>
+    div(class='card grid-item')
+      img(src='https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555278357/shape/mentalfloss/pachead.png')
+      <div>Pacman on rampage</div>
+    div(class='card grid-item')
+      img(src='https://image.shutterstock.com/image-photo/salvador-brazil-march-9-2017-600w-653100043.jpg')
+      <div>Brazil</div>
+    div(class='card grid-item')
+      img(src='https://upload.wikimedia.org/wikipedia/commons/0/0f/Eiffel_Tower_Vertical.JPG')
+      <div>Eiffel tower</div>-->
+    if pics
+      each val in pics
+        div(class='card grid-item')
+          img(src=val.link)
+          <div>#{val.description} by @#{val.username}</div>

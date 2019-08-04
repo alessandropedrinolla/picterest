@@ -1,0 +1,95 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display:flex;
+  background: black;
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+header{
+  color: white;
+  min-width: 250px;
+}
+
+header div{
+  margin:20px;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+main, .card img{
+  margin: 0 auto;
+}
+
+main{
+  width: 70%;
+  min-height: 500px;
+}
+
+#login-form *{
+  display: block;
+}
+
+#register-form *{
+  display:block;
+}
+
+.grid-item { 
+  width: 45%;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.card{
+  border-radius: 15px;
+}
+
+.card div{
+  text-align:center;
+}
+
+.card img{
+  width:90%;
+  display: block;
+  padding: 15px;
+}

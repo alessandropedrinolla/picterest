@@ -1,0 +1,7 @@
+extends layout.pug
+block content
+  main
+    form(id='register-form' action='\signup' method='POST')
+       input(type='txt' placeholder='username' name='username' required)
+       input(type='password' placeholder='password' name='password' required)
+       button(type='submit') Register
